@@ -1,0 +1,14 @@
+{
+  "name": "newjsfiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "div.js",
+  "scripts": {
+    "test": "mocha **/*promises.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  }
+}
