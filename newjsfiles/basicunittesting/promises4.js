@@ -28,8 +28,8 @@ let task2 = function(c){
     })
 }
 
-module.exports = task1
-module.exports = task2
+module.exports = {task1 , task2}
+//module.exports = task2
 
  /* task1(1 , 3)
            .then(task2)
