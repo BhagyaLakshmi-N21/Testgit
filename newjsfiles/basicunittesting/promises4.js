@@ -11,7 +11,12 @@ let task1 = function(a , b){
         }
         else
         {reject('nums are equal')}
-    })
+    }).then((res) => {
+        return res
+       })
+       .catch((err) => {
+           return err
+       })
 }
 
 //console.log(task1(1,3))
@@ -25,7 +30,12 @@ let task2 = function(c){
         else{
             reject(c)
         }
-    })
+    }).then((res) => {
+        return res
+       })
+       .catch((err) => {
+           return err
+       })
 }
 
 module.exports = {task1 , task2}

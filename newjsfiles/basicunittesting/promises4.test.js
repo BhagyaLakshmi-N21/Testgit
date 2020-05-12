@@ -14,12 +14,10 @@ describe('testing promises' , () => {
      let res2 
     it('testing with equal values' , async function() {
         let res1 = await obj.task1(3 , 3 )
-       let res2 = await obj.task2(res1).catch(res2)         //this test case is throwing error as nums are equal
-       {
+       let res2 = await obj.task2(res1)        //this test case is throwing error as nums are equal - resolved by adding then and catch stmts 
+                                                  //in module file , this is so rejected answer is not returned here 
            assert.equal(res2 , 'nums are equal')
-       }
-         
-        
+          
     })
 
 
